@@ -1,0 +1,19 @@
+.ui-library-label {
+  color: #100f0f;
+  font-size: 16px;
+  line-height: 1.48;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  &[label-required='true'] {
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-left: 4px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

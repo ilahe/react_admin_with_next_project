@@ -1,0 +1,66 @@
+.mb-2 {
+  margin-bottom: 16px;
+}
+.MuiTypography-h4 {
+  font-size: 22px !important;
+  color: #ba0d5d !important;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 13px 11px;
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+.customer-img {
+  width: 150px;
+  height: 140px;
+  border-radius: 16px;
+  position: relative;
+  border: none;
+  outline: none;
+  background: #BE0E60;
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none !important;
+  }
+  img {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 150px;
+    height: 140px;
+    border-radius: 20%;
+    outline: none !important;
+  }
+}
+button {
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
+  input[type=file] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+}
+.MuiFormLabel-root {
+  &.Mui-focused {
+    color: #B90D5D !important;
+  }
+}
+.MuiOutlinedInput-root {
+  &:hover {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #B90D5D !important;
+    }
+  }
+  &.Mui-focused {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: #B90D5D !important;
+      border-width: 1.5px !important;
+    }
+  }
+}

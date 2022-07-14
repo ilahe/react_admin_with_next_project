@@ -1,0 +1,75 @@
+export const LogInTypes = {
+    POST_SIGN_IN: "@signIn/POST_SIGN_IN",
+    POST_SIGN_IN_ERROR: "@signIn/POST_SIGN_IN_ERROR",
+    POST_CHECK_TOKEN_ERROR: "@signIn/POST_CHECK_TOKEN_ERROR",
+    PUT_SIGN_IN: "@signIn/PUT_SIGN_IN",
+    PUT_SIGN_IN_ERROR: "@signIn/PUT_SIGN_IN_ERROR",
+    PUT_CHECK_TOKEN_ERROR: "@signIn/PUT_CHECK_TOKEN_ERROR",
+};
+export const PermissionTypes = {
+    POST_PERMISSION: "@permission/POST_PERMISSION",
+    PUT_POST_PERMISSION: "@permission/PUT_POST_PERMISSION",
+    PUT_GET_PERMISSIONS: "@permission/PUT_GET_PERMISSIONS",
+    GET_PERMISSIONS: "@permission/GET_PERMISSIONS",
+    CHANGE_STATUS: "@permission/CHANGE_STATUS",
+    SELECT_ALL_STATUSES: "@permission/SELECT_ALL_STATUSES",
+    SET_PERMISSION_DATA: "@permission/SET_PERMISSION_DATA",
+    CLEAR_PERMISSION_DATA: "@permission/CLEAR_PERMISSION_DATA",
+};
+export const RolesTypes = {
+    GET_ALL_ROLES: "@permission/GET_ALL_ROLES",
+    PUT_ALL_ROLES: "@permission/PUT_ALL_ROLES",
+    SET_TO_API: "@permission/SET_TO_API",
+    GET_SINGLE_ROLE: "@roles/GET_SINGLE_ROLE",
+    PUT_SINGLE_ROLE: "@roles/PUT_SINGLE_ROLE",
+    SET_EDIT_SINGLE_ROLE: "@roles/SET_EDIT_SINGLE_ROLE",
+    SET_DELETE_SINGLE_ROLE: "@roles/SET_DELETE_SINGLE_ROLE",
+    CLEAR_ROLES_PERMISSION_DATA: "@roles/CLEAR_ROLES_PERMISSION_DATA",
+};
+export const UsersTypes = {
+    GET_USERS: "@users/GET_USERS",
+    PUT_USERS: "@users/PUT_USERS",
+    GET_SINGLE_ADMIN: "@users/GET_SINGLE_ADMIN",
+    PUT_SINGLE_ADMIN: "@users/GET_SINGLE_ADMIN",
+    SET_EDIT_SINGLE_ADMIN: "@users/SET_EDIT_SINGLE_ADMIN",
+    SET_TOGGLE_BLOCK_SINGLE_ADMIN: "@users/SET_TOGGLE_BLOCK_SINGLE_ADMIN",
+    SET_USERS_DATA_BY_KEY: "@users/SET_USERS_DATA_BY_KEY",
+    SET_POST_USER: "@users/SET_POST_USER",
+    SET_ERRORS: "@users/SET_ERRORS",
+    CLEAR_ERRORS: "@users/CLEAR_ERRORS",
+};
+
+// Customers
+
+export const CustomersType = {
+    GET_CUSTOMERS: "@customers/GET_CUSTOMERS",
+    PUT_CUSTOMERS: "@customers/PUT_CUSTOMERS",
+    GET_SINGLE_CUSTOMER: "@customers/GET_SINGLE_CUSTOMER",
+    PUT_SINGLE_CUSTOMER: "@customers/PUT_SINGLE_CUSTOMER",
+    GET_ALL_CITIES: "@customers/GET_ALL_CITIES",
+    SET_BLOCK_SINGLE_CUSTOMER: "@customers/SET_BLOCK_SINGLE_CUSTOMER",
+    SET_UNBLOCK_SINGLE_CUSTOMER: "@customers/SET_UNBLOCK_SINGLE_CUSTOMER",
+    GET_BLOCK_REASON: "@customers/GET_BLOCK_REASON",
+    PUT_BLOCK_REASON: "@customers/PUT_BLOCK_REASON",
+    PUT_ALL_CITIES: "@customers/PUT_ALL_CITIES",
+    SET_EDIT_SINGLE_CUSTOMER: "@customers/SET_EDIT_SINGLE_CUSTOMER",
+    SET_CUSTOMERS_DATA_BY_KEY: "@@customers/SET_CUSTOMERS_DATA_BY_KEY",
+    SET_IMAGE_TO_STORE: "@@customers/SET_IMAGE_TO_STORE",
+    SET_POST_CUSTOMERS: "@@users/SET_POST_CUSTOMERS",
+    SET_ERRORS: "@@customers/SET_ERRORS",
+    CLEAR_ERRORS: "@@customers/CLEAR_ERRORS",
+};
+
+// Categories
+
+export const CategoriesType = {
+    GET_CATEGORIES: "@categories/GET_CATEGORIES",
+    PUT_CATEGORIES: "@categories/PUT_CATEGORIES",
+};
+
+// Loading
+
+export const SET_LOADING = "SET_LOADING";
+
+//Goods
+export const GoodsType = {};

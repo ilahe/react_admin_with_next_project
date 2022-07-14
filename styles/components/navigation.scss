@@ -1,0 +1,102 @@
+.navigation {
+  height: 100%;
+  max-height: 100%;
+  width: 360px;
+  z-index: 155;
+  box-shadow: 0 0 7px -3px rgb(50 50 50 / 75%);
+  overflow: hidden;
+  .MuiButtonBase-root {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+}
+.mob-btn {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .nav-mobile {
+    .navigation {
+      visibility: visible;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      transition: all 0.5s;
+      position: absolute;
+      left: 0;
+      width: 300px;
+      &.show-nav {
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        transition: all 0.5s;
+      }
+      nav {
+        width: 300px;
+      }
+    }
+    .mob-btn {
+      display: block !important;
+      padding: 0 !important;
+      margin: 10px !important;
+      height: 30px !important;
+      min-width: 30px !important;
+      &:hover {
+        background: none !important;
+      }
+    }
+    .nav-icon {
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      background: #B90D5D;
+      color: inherit;
+      font-size: 0;
+      transition: 0.35s;
+      &::before {
+        transform: translate(-50%, -10px);
+        transform-origin: 0 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #B90D5D;
+        content: "";
+        transition: transform 0.35s;
+      }
+      &::after {
+        transform: translate(-50%, 10px);
+        transform-origin: 0 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #B90D5D;
+        content: "";
+        transition: transform 0.35s;
+      }
+      &.back-arrow {
+        background: transparent;
+        &::before {
+          transform-origin: 0% 0%;
+          transform: translate(-50%, 0) rotate(-45deg) scaleX(0.7);
+        }
+        &::after {
+          transform-origin: 0% 0%;
+          transform: translate(-50%, 0) rotate(45deg) scaleX(0.7);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 480px) {
+  //.navigation {
+  //  width: 320px;
+  //}
+}

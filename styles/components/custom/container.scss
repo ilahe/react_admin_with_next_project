@@ -1,0 +1,53 @@
+.makeStyles-main-3 {
+  width: 79% !important;
+  margin-top: 15px !important;
+}
+.makeStyles-main-28 {
+  padding-top: 20px;
+}
+#cancellationNotesContainer {
+  position: relative;
+  width: 100%;
+  label {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    padding: 0.9rem 0;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: all 0.15s ease;
+  }
+  textarea {
+    background-color: transparent;
+    padding: 0.875rem 0;
+    font-size: 1rem;
+    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    width: 100%;
+    border-radius: 4px;
+    min-height: 8rem;
+    resize: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    &:hover {
+      border: 1px solid #B90D5D;
+    }
+    &:focus,
+    &.not-empty {
+      outline: 0;
+      border: 1px solid #B90D5D;
+    }
+    &:focus ~ label,
+    &.not-empty ~ label {
+      font-size: 0.7rem;
+      color: #B90D5D;
+      top: -6px;
+      transition: all 0.15s ease;
+      background: white;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 0;
+      padding-bottom: 0px;
+    }
+  }
+}
